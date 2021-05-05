@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/stylesheets/login.css">
+
+    <title>Авторизация</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+<header class="site-header sticky-top bg-dark text-white">
+    <nav class="navbar navbar-expand-md navbar-light shadow">
+        <div class="container-md py-2">
+            <a class="navbar-brand fs-4 fw-bolder text-secondary" href="#">
+                <img class="pb-1" src="../public/images/logo.svg" width="30" alt=""> KittensStorage
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav me-auto">
+                </ul>
+
+                <div class="row row-cols-1 row-cols-md-auto px-2 px-md-0">
+                    <div class="col px-0 mt-2 mt-md-0 ms-md-2">
+                        <a class="btn btn-outline-light" href="/auth/register">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="position-relative overflow-hidden text-center" id="">
+        <div class="form-signin col-md-5 p-lg-5 mx-auto my-5">
+            <form action="/auth/login" method="post">
+                <img class="mb-3" src="../public/images/logo.svg" alt="" width="72" height="">
+                <h1 class="h3 mb-3 fw-normal">Авторизация</h1>
+                <label for="inputEmail" class="visually-hidden">Email-адрес</label>
+                <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email-адрес" required
+                       autofocus>
+                <label for="inputPassword" class="visually-hidden">Пароль</label>
+                <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Пароль"
+                       required>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me" class="me-2">Запомнить меня
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-warning btn-outline-dark px-0" type="submit">Войти</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="footer mt-auto pb-3">
+    <div class="container d-flex justify-content-center">
+        <span class="text-muted">&copy; Copyright 2021<br>Uladzislau Petravets</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
